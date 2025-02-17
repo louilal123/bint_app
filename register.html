@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Bantayan Island Native Trees (BINT)</title>
+    <link href="./src/output.css" rel="stylesheet">
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-softWhite transition-colors duration-300">
+    <div class="flex flex-col items-center space-y-5 animate-fadeIn">
+      <!-- Logo -->
+      <div class="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-4 border-green-300">
+        <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2c-1.84 0-3.33 1.31-3.77 3.03-1.29.11-2.47.78-3.2 1.83C3.68 8.01 4 9.99 5.22 11.1 5.08 11.72 5 12.35 5 13c0 2.76 2.24 5 5 5h.5V22h3v-4h.5c2.76 0 5-2.24 5-5 0-.65-.08-1.28-.22-1.9 1.22-1.11 1.54-3.09.7-4.54-.73-1.05-1.91-1.72-3.2-1.83C15.33 3.31 13.84 2 12 2z"></path>
+        </svg>
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-4xl font-extrabold text-green-700 text-center tracking-wide">
+        Bantayan Island Native Trees
+      </h1>
+      <p class="text-md text-gray-600 text-center italic">
+        Join our community and protect Bantayan's Flora
+      </p>
+
+      <!-- Signup Form -->
+      <form class="flex flex-col space-y-4 w-72 mt-6">
+        <input type="text" placeholder="Full Name" required 
+  class="px-4 py-2 border border-gray-300 rounded-lg bg-transparent text-gray-500 placeholder:text-gray-400 focus:ring-1 focus:ring-green-800" />
+
+<input type="email" placeholder="Email" required 
+  class="px-4 py-2 border border-gray-300 rounded-lg bg-transparent text-gray-500 placeholder:text-gray-400 focus:ring-1 focus:ring-green-800" />
+
+<input type="password" placeholder="Password" required 
+  class="px-4 py-2 border border-gray-300 rounded-lg bg-transparent text-gray-500 placeholder:text-gray-400 focus:ring-1 focus:ring-green-800" />
+
+<input type="password" placeholder="Confirm Password" required 
+  class="px-4 py-2 border border-gray-300 rounded-lg bg-transparent text-gray-500 placeholder:text-gray-400 focus:ring-1 focus:ring-green-800" />
+
+        <button type="submit" class="bg-green-700 text-white py-2 rounded-lg hover:bg-green-700 transition-transform transform hover:scale-105 active:scale-95">
+          Sign Up
+        </button>
+      </form>
+
+      <!-- Back to Login Link -->
+      <p class="text-sm text-gray-500 dark:text-gray-400">
+        Already have an account? <a href="login.html" class="text-green-600 hover:underline">Sign in here</a>
+      </p>
+    </div>
+
+    <!-- Circular Loading Overlay (Tailwind Only) -->
+   <!-- Circular Loading Overlay -->
+<div id="loading-overlay" class="fixed inset-0 hidden items-center justify-center bg-white dark:bg-black z-[999999]">
+  <div class="h-16 w-16 animate-spin rounded-full border-4 border-solid border-green-900 border-t-transparent"></div>
+</div>
+
+<script src="js/preloader.js"></script>
+
+
+  </body>
+</html>
