@@ -6,9 +6,9 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello from Flask!'
 
-@app.route('/profile')
+@app.route('/prev]')
 def profile():
-    return render_template('dashboard.html')  
+    return render_template('prev.html')  
 
 if __name__ == '__main__':
     app.run(debug=True)
