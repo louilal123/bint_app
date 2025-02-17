@@ -8,7 +8,7 @@ def hello_world():
 
 @app.route('/profile')
 def profile():
-    return render_template('profle.html')  
+    return render_template('dashboard.html')  
 
 if __name__ == '__main__':
     app.run(debug=True)
