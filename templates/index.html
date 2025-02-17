@@ -4,8 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bantayan Island Native Trees (BINT)</title>
-    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightGreen: "#DFF6D8",
+              darkGreen: "#1E5128",
+              softWhite: "#ffffff"
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="flex items-center justify-center min-h-screen bg-softWhite transition-colors duration-300">
     <div class="flex flex-col items-center space-y-5 animate-fadeIn">
@@ -20,23 +33,19 @@
       <p class="text-md text-gray-600 text-center italic">
         Explore Bantayan's Native and Non-Native Flora
       </p>
+      <!-- Login Form -->
       <form class="flex flex-col space-y-4 w-72 mt-6">
-        <input type="email" placeholder="Email" class="px-4 py-2 border border-gray-300 rounded-lg bg-transparent-100  focus:ring-1 focus:ring-green-800" />
-        <input type="password" placeholder="Password" class="px-4 py-2 border border-gray-300 rounded-lg bg-transparent-100  focus:ring-1 focus:ring-green-800" />
+        <input type="email" placeholder="Email" required class="px-4 py-2 border border-dark-300 rounded-lg bg-transparent-100   placeholder-transparent focus:ring-2 focus:ring-green-700" />
+        <input type="password" placeholder="Password" required class="px-4 py-2 border border-dark-300 rounded-lg bg-none-100 placeholder-transparent focus:ring-2 focus:ring-green-700" />
         <a href="forgot-password.html" class="text-sm text-green-600 hover:underline self-end">Forgot password?</a>
-        <button type="submit" class="bg-green-800 text-white py-2 rounded-lg hover:bg-green-700 transition-transform transform hover:scale-105 active:scale-95"><a href="dashboard.html">Signin</a></button>
+        <button type="submit" class="bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition-transform transform hover:scale-105 active:scale-95">Signin</button>
       
       </form>
+      <!-- Sign-Up Link -->
       <p class="text-sm text-gray-500 dark:text-gray-400">
-        New here? <a href="register.html" class="text-green-600 hover:underline">Create an account</a>
+        New here? <a href="signup.html" class="text-green-600 hover:underline">Create an account</a>
       </p>
     </div>
-    <!-- Circular Loading Overlay -->
-<div id="loading-overlay" class="fixed inset-0 hidden items-center justify-center bg-white dark:bg-black z-[999999]">
-  <div class="h-16 w-16 animate-spin rounded-full border-4 border-solid border-green-900 border-t-transparent"></div>
-</div>
-
-    <script src="js/preloader.js"></script>
     <style>
       @keyframes fadeIn {
         from {
@@ -49,9 +58,11 @@
         }
       }
       .animate-fadeIn {
-        animation: fadeIn 0.s ease-in;
+        animation: fadeIn 1.5s ease-out;
       }
-      
+      ::placeholder {
+        color: transparent;
+      }
     </style>
   </body>
 </html>
