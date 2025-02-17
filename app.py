@@ -8,7 +8,7 @@ def hello_world():
 
 @app.route('/profile')
 def profile():
-    return render_template('profile.html')  # Renders profile.html from the templates folder
+    return render_template('templates/profile.html')  # Renders profile.html from the templates folder
 
 if __name__ == '__main__':
     app.run(debug=True)
